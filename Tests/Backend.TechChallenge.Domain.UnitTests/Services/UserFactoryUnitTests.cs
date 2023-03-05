@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Backend.TechChallenge.Domain.Entities;
 using Backend.TechChallenge.Domain.Entities.Enums;
 using Backend.TechChallenge.Domain.Services.Contracts.Strategies;

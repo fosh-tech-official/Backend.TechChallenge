@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.TechChallenge.Appli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.TechChallenge.Domain.UnitTests", "Tests\Backend.TechChallenge.Domain.UnitTests\Backend.TechChallenge.Domain.UnitTests.csproj", "{9F35DCC5-865C-4738-ABF2-A24DC4F8E6AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.TechChallenge.Api.ComponentTests", "Tests\Backend.TechChallenge.Api.ComponentTests\Backend.TechChallenge.Api.ComponentTests.csproj", "{E3F5B57A-EE6D-4F36-A05F-26FEC78672DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{9F35DCC5-865C-4738-ABF2-A24DC4F8E6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F35DCC5-865C-4738-ABF2-A24DC4F8E6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F35DCC5-865C-4738-ABF2-A24DC4F8E6AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F5B57A-EE6D-4F36-A05F-26FEC78672DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F5B57A-EE6D-4F36-A05F-26FEC78672DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F5B57A-EE6D-4F36-A05F-26FEC78672DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F5B57A-EE6D-4F36-A05F-26FEC78672DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,5 +76,6 @@ Global
 		{FF1E4355-7DA3-47EF-8C6F-D8AE2B378FB8} = {62B96477-9EE0-4E49-AF8D-76ED60024E57}
 		{844E74A7-2A74-43F9-B0A4-4A2BEC8048D7} = {6991626E-2031-4C37-95B5-30A1904CB771}
 		{9F35DCC5-865C-4738-ABF2-A24DC4F8E6AD} = {6991626E-2031-4C37-95B5-30A1904CB771}
+		{E3F5B57A-EE6D-4F36-A05F-26FEC78672DD} = {6991626E-2031-4C37-95B5-30A1904CB771}
 	EndGlobalSection
 EndGlobal
