@@ -71,16 +71,15 @@ namespace Backend.TechChallenge.Api.Domain.Handler
                     break;
                 case UserType.SuperUser:
                     if (newUser.Money > 100)
-                        percentage = 0.20m;
+                        percentage = 0.2m;
                     break;
                 case UserType.Premium:
                     if (newUser.Money > 100)
-                        percentage = 0.8m;
+                        percentage = 2m;
                     break;
             }
 
-            var gift = newUser.Money * percentage;
-            newUser.Money = newUser.Money + gift;
+            newUser.Money += newUser.Money * percentage;
         }
     }
 }

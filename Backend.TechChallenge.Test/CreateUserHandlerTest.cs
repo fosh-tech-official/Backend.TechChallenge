@@ -70,7 +70,7 @@ namespace Backend.TechChallenge.Test
         [InlineData(UserType.SuperUser, 110, 132)]
         [InlineData(UserType.SuperUser, 100, 100)]
         
-        [InlineData(UserType.Premium, 110, 198)]
+        [InlineData(UserType.Premium, 110, 330)]
         [InlineData(UserType.Premium, 100, 100)]
         public void GivenInputData_WhenApplyGift_ThenGiftApplied(UserType type , decimal initialMoney, decimal finalMoney)
         {
