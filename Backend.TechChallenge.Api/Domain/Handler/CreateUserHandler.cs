@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 using Backend.TechChallenge.Api.Common.Models;
@@ -19,7 +20,6 @@ namespace Backend.TechChallenge.Api.Domain.Handler
     public class CreateUserHandlerResult
     {
     }
-
     public class CreateUserHandler : IRequestHandler<CreateUserHandlerRequest, CreateUserHandlerResult>
     {
         private readonly IStore _store;
@@ -57,7 +57,7 @@ namespace Backend.TechChallenge.Api.Domain.Handler
             }
         }
 
-        private void ApplyGift(UserBase newUser)
+        public void ApplyGift(UserBase newUser)
         {
             var percentage = 0m;
 
