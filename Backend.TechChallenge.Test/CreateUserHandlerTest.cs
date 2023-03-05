@@ -31,7 +31,10 @@ namespace Backend.TechChallenge.Test
 
         [Theory]
         // Same email
-        [InlineData("Agustina@gmail.com", "666 666 666", "Paula", "Av. Juan F")]
+        [InlineData("agustina@gmail.com", "666 666 666", "Paula", "Av. Juan F")]
+        [InlineData("Agustina@gmail.com ", "666 666 666", "Paula", "Av. Juan F")]
+        [InlineData(" AGUSTINA @ GMAIL.COM ", "666 666 666", "Paula", "Av. Juan F")]
+        [InlineData(" agustina @gmail.com ", "666 666 666", "Paula", "Av. Juan F")]
         // Same phone
         [InlineData("different@gmail.com", "+349 1122354215", "Paula", "Av. Juan F")]
         // Same name and address
@@ -41,7 +44,7 @@ namespace Backend.TechChallenge.Test
             // Arrange
             var store = new Mock<IStore>();
             store.Setup(x => x.GetUsers()).Returns(new List<User> {
-                new User { Email = "Agustina@gmail.com", Phone = "+349 1122354215", Name = "Agustina", Address = "Av. Juan G" } });
+                new User { Email = "agustina@gmail.com", Phone = "+349 1122354215", Name = "Agustina", Address = "Av. Juan G" } });
             var req = new CreateUserHandlerRequest
             {
                 User = new NormalUser
